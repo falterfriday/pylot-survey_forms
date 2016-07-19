@@ -3,6 +3,26 @@
     <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
   </head>
   <body>
-  The server is running. Go get it!
-  </body>
+
+	<div>
+		<form action='/surveys/process' method="POST">
+			Your Name: <input type="text" name="name"><br>
+			Dojo Location: 
+			<select name="location">
+				<option value="Here">Here</option>
+				<option value="There">There</option>
+				<option value="Every">Every</option>
+				<option value="Where">Where</option>
+			</select><br>
+			Favorite Language: 
+			<select name="language">
+				<option value="HTML-CSS">HTML-CSS</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="Python">Python</option>
+			</select><br>
+			Comment (optional): <input type="text" name="comment"><br>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</div>  
+</body>
 </html>
