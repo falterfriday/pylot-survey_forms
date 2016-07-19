@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+======================================================
+______    _ _           ______    _     _             
+|  ___|  | | |          |  ___|  (_)   | |            
+| |_ __ _| | |_ ___ _ __| |_ _ __ _  __| | __ _ _   _ 
+|  _/ _` | | __/ _ \ '__|  _| '__| |/ _` |/ _` | | | |
+| || (_| | | ||  __/ |  | | | |  | | (_| | (_| | |_| |
+\_| \__,_|_|\__\___|_|  \_| |_|  |_|\__,_|\__,_|\__, |
+                                                 __/ |
+                                                |___/ 
+======================================================
+Owner Name: Patrick A. Todd
+Profile: https://www.github.com/falterfriday
+Blog: https://falterfriday.wordpress.com/
+Version: 0.2
+Description: Never Stop Learning
+======================================================
+-->
+<head>
+  <title>Dojo Survey Results</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+  <body>
+    <div id="wrapper">
+    <div>
+      Thanks for submitting this form! You have submitted this form {{ count }} times now.
+    </div>
+    <h1>Submitted Info:</h1>
+    <p>Name: {{ name }}</p>
+    <p>Location: {{ location }}</p>
+    <p>Language: {{ language }}</p>
+    <p>Comment: {{ comment }}</p>
+    </div>
+  </body>
+</html>
